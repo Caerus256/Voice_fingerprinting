@@ -52,8 +52,8 @@ def record_audio():
     sample_rate = 44100  
     audio_data = sd.rec(int(duration * sample_rate), samplerate=sample_rate, channels=2)
     sd.wait()  
-    wavfile.write("recorded_audio.wav", sample_rate, audio_data)
-    file = "C://Users//AKHIL//Desktop//Voice-Authentication-CNN-main//recorded_audio.wav"
+    wavfile.write(os.path.dirname(__file__)+"recorded_audio.wav", sample_rate, audio_data)
+    file = os.path.dirname(__file__)+"recorded_audio.wav"
     print("Recording finished. Audio saved as 'recorded_audio.wav'.")
     return file
 
