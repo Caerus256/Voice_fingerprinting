@@ -17,4 +17,7 @@ Authenticate a user if it matches voice prints saved on the disk
 
 ``C:\Users\Desktop\Voice-Recognition-CNN>python voice_auth.py -t recognize -f C:\path\to\audio\audio.flac``
 
+## Real time recognition or enrolling:
+``C:\Users\Desktop\Voice-Recognition-CNN>python voice_auth.py -r -t recognize`` 
+
 
